@@ -1,0 +1,71 @@
+{
+	"items": [
+		{
+			"name": "KindleTodo",
+			"priority": 0,
+			"items": [
+				{
+					"name": "Open todo editor",
+					"priority": 1,
+					"action": "./bin/kindletodo.sh",
+					"params": "open",
+					"status": false
+				},
+				{
+					"name": "Sleep screen",
+					"priority": 2,
+					"items": [
+						{
+							"name": "Status",
+							"priority": 1,
+							"action": "./bin/kindletodo.sh",
+							"params": "status",
+							"exitmenu": false
+						},
+						{
+							"name": "Start sleep hook (until reboot)",
+							"priority": 2,
+							"action": "./bin/kindletodo.sh",
+							"params": "start",
+							"exitmenu": false
+						},
+						{
+							"name": "Stop sleep hook",
+							"priority": 3,
+							"action": "./bin/kindletodo.sh",
+							"params": "stop",
+							"exitmenu": false
+						},
+						{
+							"name": "Render wallpaper now",
+							"priority": 4,
+							"action": "./bin/kindletodo.sh",
+							"params": "render",
+							"exitmenu": false
+						},
+						{
+							"name": "Preview wallpaper (10 s)",
+							"priority": 5,
+							"action": "./bin/kindletodo.sh",
+							"params": "preview"
+						}
+					]
+				},
+				{
+					"name": "Run diagnostics",
+					"priority": 3,
+					"action": "./bin/kindletodo.sh",
+					"params": "diagnose",
+					"exitmenu": false
+				},
+				{
+					"name": "Uninstall (keeps tasks)",
+					"priority": 9,
+					"action": "./bin/kindletodo.sh",
+					"params": "uninstall",
+					"exitmenu": false
+				}
+			]
+		}
+	]
+}
